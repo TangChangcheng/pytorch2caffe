@@ -1,17 +1,17 @@
 
 
+import traceback
+
+import numpy as np
+
 import torch
 import torch.nn as nn
-import traceback
-from Caffe import caffe_net
 import torch.nn.functional as F
 from torch import Tensor
 from torch.autograd import Variable
-from Caffe import layer_param
 from torch.nn.modules.utils import _pair
-import numpy as np
 
-
+from .Caffe import caffe_net, layer_param
 
 
 """
